@@ -33,7 +33,7 @@ const Footer = () => {
               <hr style={{ borderColor: "white" }} />
               <Typography>
                 <Link
-                  href="https://www.fsm.ac.in/conference/fimc2024/about-the-conference"
+                  href="/about"
                   sx={{
                     color: "white",
                     textDecoration: "none",
@@ -44,7 +44,7 @@ const Footer = () => {
                   About the Conference
                 </Link>
                 <Link
-                  href="https://www.fsm.ac.in/conference/fimc2024/event"
+                  href="/events"
                   sx={{
                     color: "white",
                     textDecoration: "none",

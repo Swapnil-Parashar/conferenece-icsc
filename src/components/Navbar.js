@@ -139,7 +139,7 @@ const Navbar = () => {
         {/* Event */}
         <Button
           color="inherit"
-          href="https://www.fsm.ac.in/conference/fimc2024/event"
+          href="/events"
         >
           Event
         </Button>
@@ -147,7 +147,7 @@ const Navbar = () => {
         {/* Important Dates */}
         <Button
           color="inherit"
-          href="https://www.fsm.ac.in/conference/fimc2024/important-dates"
+          href="/importantDates"
         >
           Important Dates
         </Button>
