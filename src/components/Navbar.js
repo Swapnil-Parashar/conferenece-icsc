@@ -203,7 +203,7 @@ const Navbar = () => {
         </div>
 
         {/* Login/Signup Button */}
-        <Button variant="contained" color="primary" sx={{ mx: 2 }}>
+        <Button variant="contained" color="primary" sx={{ mx: 2 }} href="/login">
           Login
         </Button>
 

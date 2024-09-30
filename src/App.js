@@ -9,6 +9,7 @@ import ConferenceCommittee from "./pages/CommitteePage";
 import FAQ from "./pages/FaqPage";
 import Events from "./pages/EventsPage";
 import ImportantDates from "./pages/ImportantDatesPage";
+import Login from "./pages/auth/Login";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/events" element={<Events />} />
             <Route path="/importantDates" element={<ImportantDates />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </div>
       </Router>
