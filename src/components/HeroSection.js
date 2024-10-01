@@ -68,7 +68,7 @@ const HeroSection = () => {
               </Typography>
               <Button
                 variant="contained"
-                href="upload/images/FIMC2024.pdf"
+                href="upload/images/ICSC2025.pdf"
                 target="_blank"
                 rel="noreferrer"
                 sx={{
@@ -79,7 +79,7 @@ const HeroSection = () => {
                   },
                 }}
               >
-                FIMC 2024 Brochure
+                ICSC 2025 Brochure
               </Button>
             </Box>
           </Box>
@@ -92,15 +92,17 @@ const HeroSection = () => {
 const slidesData = [
   {
     image: "https://www.fsm.ac.in/conference/fimc2024/images/akshar.JPG",
-    heading: "The International Workshop on Sustainable Computing (IWSC 2025)",
+    heading:
+      "The International Conference on Sustainable Computing (ICSC 2025)",
     subHeading: "AI, Business Models, and the Future of Work",
-    dates: "November 28-30, 2024 (Thursday, Friday and Saturday)",
+    dates: "November 28-30, 2025 (Thursday, Friday and Saturday)",
   },
   {
     image: "https://www.fsm.ac.in/conference/fimc2024/images/akshar.JPG",
-    heading: "The International Workshop on Sustainable Computing (IWSC 2025)",
+    heading:
+      "The International Conference on Sustainable Computing (ICSC 2025)",
     subHeading: "AI, Business Models, and the Future of Work",
-    dates: "November 28-30, 2024 (Thursday, Friday and Saturday)",
+    dates: "November 28-30, 2025 (Thursday, Friday and Saturday)",
   },
   // Add more slides as needed
 ];

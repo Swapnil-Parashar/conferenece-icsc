@@ -98,35 +98,34 @@ const Navbar = () => {
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/call-for-papers"
+              href="/"
             >
               Call for Papers
             </MenuItem>
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/guidelines"
+              href="/"
             >
               Submission Guidelines
             </MenuItem>
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/revision-instructions"
+              href="/"
             >
               Revision Instructions
             </MenuItem>
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/publication-opportunities"
+              href="/"
             >
               Publication Opportunities
             </MenuItem>
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/presentation"
             >
               Presentation
             </MenuItem>
@@ -171,14 +170,12 @@ const Navbar = () => {
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/how-to-reach-fore"
             >
               How to reach FORE
             </MenuItem>
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/hotel-and-accommodation"
             >
               Hotel and Accommodation
             </MenuItem>
@@ -187,7 +184,6 @@ const Navbar = () => {
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/sponsors-exhibitors"
             >
               Sponsors & Exhibitors
             </MenuItem>
@@ -195,7 +191,6 @@ const Navbar = () => {
             <MenuItem
               onClick={handleMenuClose}
               component="a"
-              href="https://www.fsm.ac.in/conference/fimc2024/contact-us"
             >
               Contact Us
             </MenuItem>

@@ -55,7 +55,7 @@ const Footer = () => {
                   Event
                 </Link>
                 <Link
-                  href="https://www.fsm.ac.in/conference/fimc2024/submission"
+                  href="/"
                   sx={{
                     color: "white",
                     textDecoration: "none",
@@ -66,7 +66,7 @@ const Footer = () => {
                   Submission
                 </Link>
                 <Link
-                  href="https://www.fsm.ac.in/conference/fimc2024/vi-information"
+                  href="/"
                   sx={{
                     color: "white",
                     textDecoration: "none",
@@ -77,7 +77,7 @@ const Footer = () => {
                   Visa Information
                 </Link>
                 <Link
-                  href="https://www.fsm.ac.in/conference/fimc2024/reg-information"
+                  href="/"
                   sx={{
                     color: "white",
                     textDecoration: "none",
@@ -103,10 +103,10 @@ const Footer = () => {
               <Typography sx={{ marginBottom: 2 }}>
                 Phone: +91- 011-41242424
                 <br />
-                Email: fimc2024@fsm.ac.in
+                Email: icsc2025@gmail.com
                 <br />
                 <span style={{ marginLeft: "50px" }}>
-                  fimc.conveners@fsm.ac.in
+                  icsc.conveners@icsc.ac.in
                 </span>
               </Typography>
             </Box>
@@ -118,7 +118,7 @@ const Footer = () => {
       <Box sx={{ backgroundColor: "#095a83", padding: "10px" }}>
         <Container>
           <Typography variant="body2" sx={{ textAlign: "center" }}>
-            © 2024 | FIMC. All Rights Reserved.
+            © 2025 | ICSC. All Rights Reserved.
           </Typography>
         </Container>
       </Box>

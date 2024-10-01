@@ -1,11 +1,27 @@
 import React from "react";
-import { Box, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+} from "@mui/material";
 
 const importantDates = [
-  { event: "IWSC 2025", date: "June 16-17, 2025" },
-  { event: "Doctoral Colloquium", date: "June 16, 2025 (Nomination Deadline: May 1, 2025)" },
-  { event: "Pre-Conference Workshop", date: "June 16, 2025" },
-  { event: "Conference Inauguration & Paper Presentations", date: "June 17, 2025" },
+  { event: "ICSC 2025", date: "June 16-17, 2025" },
+  {
+    event: "Doctoral Colloquium",
+    date: "June 16, 2025 (Nomination Deadline: May 1, 2025)",
+  },
+  { event: "Pre-Conference Conference", date: "June 16, 2025" },
+  {
+    event: "Conference Inauguration & Paper Presentations",
+    date: "June 17, 2025",
+  },
   { event: "Editors' Meet", date: "June 17, 2025" },
   { event: "Valedictory", date: "June 17, 2025" },
 ];
@@ -39,12 +55,19 @@ const ImportantDates = () => {
       <Typography variant="h4" sx={{ mt: 4, mb: 2 }}>
         Conference Dates
       </Typography>
-      <TableContainer component={Paper} sx={{ maxWidth: "80%", margin: "0 auto" }}>
+      <TableContainer
+        component={Paper}
+        sx={{ maxWidth: "80%", margin: "0 auto" }}
+      >
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell><strong>Event</strong></TableCell>
-              <TableCell><strong>Date</strong></TableCell>
+              <TableCell>
+                <strong>Event</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Date</strong>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -62,12 +85,19 @@ const ImportantDates = () => {
       <Typography variant="h4" sx={{ mt: 6, mb: 2 }}>
         Submission Deadlines
       </Typography>
-      <TableContainer component={Paper} sx={{ maxWidth: "80%", margin: "0 auto" }}>
+      <TableContainer
+        component={Paper}
+        sx={{ maxWidth: "80%", margin: "0 auto" }}
+      >
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell><strong>Event</strong></TableCell>
-              <TableCell><strong>Date</strong></TableCell>
+              <TableCell>
+                <strong>Event</strong>
+              </TableCell>
+              <TableCell>
+                <strong>Date</strong>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

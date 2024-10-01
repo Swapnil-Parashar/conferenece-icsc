@@ -6,7 +6,7 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const FAQ = () => {
   const [expanded, setExpanded] = useState(false);
@@ -74,24 +74,24 @@ const FAQ = () => {
 
 const faqData = [
   {
-    question: "What is the theme of IWSC 2025?",
+    question: "What is the theme of ICSC 2025?",
     answer:
-      "The theme of the IWSC 2025 conference is 'Sustainable Computing for the Future.' It focuses on energy-efficient computing, AI, and blockchain, addressing global sustainability challenges and exploring how these technologies can lead to greener, more responsible futures.",
+      "The theme of the ICSC 2025 conference is 'Sustainable Computing for the Future.' It focuses on energy-efficient computing, AI, and blockchain, addressing global sustainability challenges and exploring how these technologies can lead to greener, more responsible futures.",
   },
   {
     question: "Who should attend the conference?",
     answer:
-      "This workshop is ideal for researchers, industry professionals, doctoral scholars, faculty members, and students interested in AI, green computing, blockchain, and sustainable technology. It offers excellent networking opportunities with global experts.",
+      "This Conference is ideal for researchers, industry professionals, doctoral scholars, faculty members, and students interested in AI, green computing, blockchain, and sustainable technology. It offers excellent networking opportunities with global experts.",
   },
   {
     question: "Where is the conference held?",
     answer:
-      "The IWSC 2025 will be held in Ho Chi Minh City, Vietnam. Specific details, including the exact venue, will be shared closer to the event date.",
+      "The ICSC 2025 will be held in Ho Chi Minh City, Vietnam. Specific details, including the exact venue, will be shared closer to the event date.",
   },
   {
     question: "What is the schedule for the conference?",
     answer:
-      "IWSC 2025 spans two days, June 16-17, 2025, and includes keynote speeches, technical sessions, panel discussions, and networking events. A detailed schedule will be available on the conference website soon.",
+      "ICSC 2025 spans two days, June 16-17, 2025, and includes keynote speeches, technical sessions, panel discussions, and networking events. A detailed schedule will be available on the conference website soon.",
   },
   {
     question: "How can I register for the conference?",
@@ -101,7 +101,7 @@ const faqData = [
   {
     question: "Are there opportunities for networking?",
     answer:
-      "Yes, IWSC 2025 offers plenty of networking opportunities through scheduled coffee breaks, luncheons, workshops, and an evening gala dinner, allowing participants to connect with peers and industry leaders.",
+      "Yes, ICSC 2025 offers plenty of networking opportunities through scheduled coffee breaks, luncheons, Conferences, and an evening gala dinner, allowing participants to connect with peers and industry leaders.",
   },
   {
     question: "How can participants submit papers or proposals for sessions?",
