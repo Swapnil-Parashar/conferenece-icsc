@@ -118,6 +118,7 @@ const committeeSections = [
     members: [
       { name: "Mr. Swapnil Parashar", affiliation: "Central University of Haryana, India" },
       { name: "Mr. Subrahmanyam B H V S", affiliation: "Central University of Haryana, India" },
+      { name: "Mr. Deepak Kumar", affiliation: "Central University of Haryana, India" },
     ],
   },
 ];
