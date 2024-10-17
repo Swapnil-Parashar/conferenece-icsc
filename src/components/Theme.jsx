@@ -1,5 +1,33 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Box, Typography, Card, CardMedia, CardContent } from "@mui/material";
+import SmartToyIcon from '@mui/icons-material/SmartToy';
+import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
+
+// Import your images
+import greenComputingImage from '../assets/green_computing.jpg';
+import aiSustainabilityImage from '../assets/ai_sustainability.jpg';
+import renewableEnergyImage from '../assets/renewable_energy.png';
+
+const themesData = [
+  {
+    title: "Green Computing",
+    description:
+      "Explore how energy-efficient technologies can reduce the environmental impact of computing and pave the way for a more sustainable future.",
+    image: greenComputingImage, // Replace icon with relevant image
+  },
+  {
+    title: "AI for Sustainability",
+    description:
+      "Understand the role of Artificial Intelligence in advancing sustainability across industries.",
+    image: aiSustainabilityImage, // Replace icon with relevant image
+  },
+  {
+    title: "Renewable Energy Integration",
+    description:
+      "Learn how computing technologies can help integrate renewable energy into the grid.",
+    image: renewableEnergyImage, // Replace icon with relevant image
+  },
+];
 
 const Themes = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -84,28 +112,5 @@ const Themes = () => {
     </Box>
   );
 };
-
-const themesData = [
-  {
-    title: "Green Computing",
-    description:
-      "Explore how energy-efficient technologies can reduce the environmental impact of computing and pave the way for a more sustainable future.",
-    image:
-      "https://www.example.com/images/green-computing.jpg", // Replace with real image URL
-  },
-  {
-    title: "AI for Sustainability",
-    description:
-      "Understand the role of Artificial Intelligence in advancing sustainability across industries by improving energy management and reducing waste.",
-    image: "https://www.example.com/images/ai-sustainability.jpg", // Replace with real image URL
-  },
-  {
-    title: "Renewable Energy Integration",
-    description:
-      "Learn how computing technologies can help integrate renewable energy into the grid to support a more sustainable energy ecosystem.",
-    image:
-      "https://www.example.com/images/renewable-energy.jpg", // Replace with real image URL
-  },
-];
 
 export default Themes;

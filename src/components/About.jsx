@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Box, Typography } from "@mui/material";
 
-const AboutTheConference = () => {
+const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -28,7 +28,11 @@ const AboutTheConference = () => {
     <Box
       ref={ref}
       sx={{
-        padding: "50px 20px",
+        padding: {
+          xs: "30px 10px", // Small screens
+          sm: "40px 15px", // Medium screens
+          md: "50px 20px", // Larger screens
+        },
         backgroundColor: "#f5f5f5",
         textAlign: "center",
         opacity: isVisible ? 1 : 0,
@@ -36,18 +40,40 @@ const AboutTheConference = () => {
         transition: "opacity 0.6s ease, transform 0.6s ease",
       }}
     >
-      <Typography variant="h2" sx={{ mb: 2 }}>
-        About the Conference
+      <Typography
+        variant="h2"
+        sx={{
+          mb: 2,
+          fontSize: {
+            xs: "1.75rem", // Small screens
+            sm: "2.5rem",  // Medium screens
+            md: "3rem",    // Larger screens
+          },
+        }}
+      >
+        About
       </Typography>
       <img
         src="https://www.fsm.ac.in/conference/fimc2024/images/heading_main_border.png"
         alt="border"
-        style={{ marginTop: "-25px", marginBottom: "25px" }}
+        style={{
+          marginTop: "-25px",
+          marginBottom: "25px",
+          width: "100%", // Responsive image width
+          maxWidth: "300px", // Max width to prevent stretching on large screens
+        }}
       />
       {aboutData.map((para, index) => (
         <Typography
           variant="body1"
-          sx={{ mb: 2 }}
+          sx={{
+            mb: 2,
+            fontSize: {
+              xs: "0.9rem", // Small screens
+              sm: "1rem",   // Medium screens
+              md: "1.1rem", // Larger screens
+            },
+          }}
           key={index}
           className={isVisible ? "fadeIn" : ""}
         >
@@ -66,4 +92,4 @@ const aboutData = [
   `Join us as we envision a future where sustainable computing solutions play a pivotal role in creating a resilient and environmentally responsible technological landscape.`,
 ];
 
-export default AboutTheConference;
+export default About;

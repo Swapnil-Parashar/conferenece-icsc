@@ -10,12 +10,13 @@ import FAQ from "./pages/FaqPage";
 import Events from "./pages/EventsPage";
 import ImportantDates from "./pages/ImportantDatesPage";
 import Login from "./pages/auth/Login";
+import { AuthProvider } from "./contexts/AuthContext"; // Import the AuthProvider
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <AuthProvider>
       <Router>
+        <Navbar />
         <div>
           <Routes>
             <Route path="/" element={<LandingPage />} />
@@ -27,9 +28,9 @@ function App() {
             <Route path="/login" element={<Login />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
-      <Footer />
-    </>
+    </AuthProvider>
   );
 }
 

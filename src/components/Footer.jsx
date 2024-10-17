@@ -8,25 +8,33 @@ const Footer = () => {
     >
       <Container sx={{ padding: "10px" }}>
         <Grid container spacing={4}>
+          {/* Central University of Haryana Section */}
           <Grid item xs={12} sm={6} md={6} lg={4}>
-            <Box sx={{ marginBottom: 3 }}>
+            <Box sx={{ marginBottom: { xs: 2, sm: 3 } }}>
               <Typography
                 variant="h6"
-                sx={{ fontSize: "18px", marginBottom: 1 }}
+                sx={{
+                  fontSize: { xs: "16px", sm: "18px" },
+                  marginBottom: 1,
+                }}
               >
                 CENTRAL UNIVERSITY OF HARYANA
               </Typography>
-              <Typography sx={{ fontSize: "16px" }}>
+              <Typography sx={{ fontSize: { xs: "14px", sm: "16px" } }}>
                 Mahendragarh, Haryana - 123031 (India)
               </Typography>
             </Box>
           </Grid>
-          {/* Quick Links */}
+
+          {/* Quick Links Section */}
           <Grid item xs={12} sm={6} md={6} lg={4}>
             <Box>
               <Typography
                 variant="h6"
-                sx={{ fontSize: "18px", marginBottom: 2 }}
+                sx={{
+                  fontSize: { xs: "16px", sm: "18px" },
+                  marginBottom: 2,
+                }}
               >
                 Quick Links
               </Typography>
@@ -90,17 +98,26 @@ const Footer = () => {
               </Typography>
             </Box>
           </Grid>
-          {/* Contact Information */}
+
+          {/* Contact Information Section */}
           <Grid item xs={12} sm={6} md={6} lg={4}>
             <Box>
               <Typography
                 variant="h6"
-                sx={{ fontSize: "18px", marginBottom: 2 }}
+                sx={{
+                  fontSize: { xs: "16px", sm: "18px" },
+                  marginBottom: 2,
+                }}
               >
                 Contact Information
               </Typography>
               <hr style={{ borderColor: "white" }} />
-              <Typography sx={{ marginBottom: 2 }}>
+              <Typography
+                sx={{
+                  marginBottom: 2,
+                  fontSize: { xs: "14px", sm: "16px" },
+                }}
+              >
                 Phone: +91- 011-41242424
                 <br />
                 Email: icsc2025@gmail.com
@@ -115,9 +132,21 @@ const Footer = () => {
       </Container>
 
       {/* Footer Bottom */}
-      <Box sx={{ backgroundColor: "#095a83", padding: "10px" }}>
+      <Box
+        sx={{
+          backgroundColor: "#095a83",
+          padding: "10px",
+          textAlign: "center",
+        }}
+      >
         <Container>
-          <Typography variant="body2" sx={{ textAlign: "center" }}>
+          <Typography
+            variant="body2"
+            sx={{
+              fontSize: { xs: "12px", sm: "14px" },
+              textAlign: "center",
+            }}
+          >
             © 2025 | ICSC. All Rights Reserved.
           </Typography>
         </Container>

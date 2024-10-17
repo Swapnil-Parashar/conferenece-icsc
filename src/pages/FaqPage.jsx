@@ -19,18 +19,41 @@ const FAQ = () => {
     <Box
       id="faq-section"
       sx={{
-        padding: "50px 20px",
+        padding: {
+          xs: "30px 10px", // Small screens
+          sm: "40px 15px", // Medium screens
+          md: "50px 20px", // Larger screens
+        },
         backgroundColor: "#f0f0f0",
         textAlign: "center",
       }}
     >
-      <Typography variant="h2" sx={{ mb: 4 }}>
+      <Typography
+        variant="h2"
+        sx={{
+          mb: {
+            xs: 3,  // Small screens
+            sm: 4,  // Medium screens
+            md: 4,  // Larger screens
+          },
+          fontSize: {
+            xs: "1.75rem", // Small screens
+            sm: "2.5rem",  // Medium screens
+            md: "3rem",    // Larger screens
+          },
+        }}
+      >
         Frequently Asked Questions (FAQs)
       </Typography>
       <img
         src="https://www.fsm.ac.in/conference/fimc2024/images/heading_main_border.png"
         alt="border"
-        style={{ marginTop: "-25px", marginBottom: "25px" }}
+        style={{
+          marginTop: "-25px",
+          marginBottom: "25px",
+          width: "100%",
+          maxWidth: "300px", // Limit the image size for large screens
+        }}
       />
 
       {faqData.map((faq, index) => (
@@ -59,9 +82,29 @@ const FAQ = () => {
               },
             }}
           >
-            <Typography variant="h6">{faq.question}</Typography>
+            <Typography
+              variant="h6"
+              sx={{
+                fontSize: {
+                  xs: "1rem",   // Small screens
+                  sm: "1.25rem", // Medium screens
+                  md: "1.5rem", // Larger screens
+                },
+              }}
+            >
+              {faq.question}
+            </Typography>
           </AccordionSummary>
-          <AccordionDetails sx={{ backgroundColor: "#fff" }}>
+          <AccordionDetails
+            sx={{
+              backgroundColor: "#fff",
+              fontSize: {
+                xs: "0.9rem",  // Small screens
+                sm: "1rem",    // Medium screens
+                md: "1.1rem",  // Larger screens
+              },
+            }}
+          >
             <Typography variant="body1" sx={{ color: "#555" }}>
               {faq.answer}
             </Typography>

@@ -1,28 +1,73 @@
 import React from "react";
 import { Box, Typography, Card, CardContent, CardMedia, Grid } from "@mui/material";
+import {
+  tankeshwarKumar,
+  narsiRBishnoi,
+  nitinGoyal,
+  ntNghe,
+  sardarIslam,
+  manjuLata,
+} from '../assets'; // Import the images from the assets folder
 
 const ConferenceCommittee = () => {
   return (
     <Box
       id="conference-committee-section"
       sx={{
-        padding: "50px 20px",
+        padding: {
+          xs: "30px 10px", // Small screens
+          sm: "40px 15px", // Medium screens
+          md: "50px 20px", // Larger screens
+        },
         backgroundColor: "#f9f9f9",
         textAlign: "center",
       }}
     >
-      <Typography variant="h2" sx={{ mb: 4 }}>
+      <Typography
+        variant="h2"
+        sx={{
+          mb: {
+            xs: 3,  // Small screens
+            sm: 4,  // Medium screens
+            md: 4,  // Larger screens
+          },
+          fontSize: {
+            xs: "1.75rem", // Small screens
+            sm: "2.5rem",  // Medium screens
+            md: "3rem",    // Larger screens
+          },
+        }}
+      >
         Conference Committee
       </Typography>
       <img
         src="https://www.fsm.ac.in/conference/fimc2024/images/heading_main_border.png"
         alt="border"
-        style={{ marginTop: "-25px", marginBottom: "25px" }}
+        style={{
+          marginTop: "-25px",
+          marginBottom: "25px",
+          width: "100%",     // Responsive width
+          maxWidth: "300px", // Limit max width
+        }}
       />
 
       {committeeSections.map((section, index) => (
-        <Box key={index} sx={{ mb: 6 }}>
-          <Typography variant="h4" sx={{ mb: 3 }}>
+        <Box key={index} sx={{ mb: { xs: 5, sm: 6 } }}>
+          <Typography
+            variant="h4"
+            sx={{
+              mb: {
+                xs: 2,  // Small screens
+                sm: 3,  // Medium screens
+                md: 3,  // Larger screens
+              },
+              fontSize: {
+                xs: "1.5rem", // Small screens
+                sm: "2rem",   // Medium screens
+                md: "2.5rem", // Larger screens
+              },
+            }}
+          >
             {section.title}
           </Typography>
           <Grid container spacing={3} justifyContent="center">
@@ -38,15 +83,42 @@ const ConferenceCommittee = () => {
                     },
                   }}
                 >
-                  <CardMedia
-                    component="img"
-                    height="180"
-                    image={member.imageUrl ? member.imageUrl : "https://via.placeholder.com/150"}
-                    alt={member.name}
-                  />
+                 <CardMedia
+  component="img"
+  sx={{
+    width: "180px",       // Set width to 180px
+    height: "180px",      // Set height to 180px
+    objectFit: "cover",   // Maintain aspect ratio and cover the entire area
+    margin: "0 auto",     // Center the image horizontally
+    borderRadius: "50%",  // Optionally, make the image circular if you want
+  }}
+  image={member.imageUrl ? member.imageUrl : "https://via.placeholder.com/150"}
+  alt={member.name}
+/>
                   <CardContent>
-                    <Typography variant="h6">{member.name}</Typography>
-                    <Typography variant="body2" sx={{ color: "#555" }}>
+                    <Typography
+                      variant="h6"
+                      sx={{
+                        fontSize: {
+                          xs: "1rem",  // Small screens
+                          sm: "1.25rem", // Medium screens
+                          md: "1.5rem", // Larger screens
+                        },
+                      }}
+                    >
+                      {member.name}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        color: "#555",
+                        fontSize: {
+                          xs: "0.875rem", // Small screens
+                          sm: "1rem",     // Medium screens
+                          md: "1rem",     // Larger screens
+                        },
+                      }}
+                    >
                       {member.affiliation}
                     </Typography>
                   </CardContent>
@@ -64,8 +136,8 @@ const committeeSections = [
   {
     title: "Patrons",
     members: [
-      { name: "Prof. Tankeshwar Kumar", affiliation: "Central University of Haryana, India" },
-      { name: "Prof. Narsee Ram Bishnoi", affiliation: "Guru Jambheshwar University of Science & Technology, India" },
+      { name: "Prof. Tankeshwar Kumar", affiliation: "Central University of Haryana, India", imageUrl: tankeshwarKumar },
+      { name: "Prof. Narsee Ram Bishnoi", affiliation: "Guru Jambheshwar University of Science & Technology, India", imageUrl: narsiRBishnoi },
     ],
   },
   {
@@ -91,10 +163,10 @@ const committeeSections = [
   {
     title: "Conference Programme Chairs",
     members: [
-      { name: "Dr. Nitin Goyal", affiliation: "Central University of Haryana, India" },
-      { name: "Dr. Thai-Nghe Nguyen", affiliation: "Can Tho University, Vietnam" },
-      { name: "Dr. Sardar M. N. Islam", affiliation: "Victoria University, Australia" },
-      { name: "Dr. Manju Lata", affiliation: "Chandigarh University, India" },
+      { name: "Dr. Nitin Goyal", affiliation: "Central University of Haryana, India", imageUrl: nitinGoyal },
+      { name: "Dr. Thai-Nghe Nguyen", affiliation: "Can Tho University, Vietnam", imageUrl: ntNghe },
+      { name: "Dr. Sardar M. N. Islam", affiliation: "Victoria University, Australia", imageUrl: sardarIslam },
+      { name: "Dr. Manju Lata", affiliation: "Chandigarh University, India", imageUrl: manjuLata },
     ],
   },
   {
@@ -117,7 +189,7 @@ const committeeSections = [
     title: "Web Development Team",
     members: [
       { name: "Mr. Swapnil Parashar", affiliation: "Central University of Haryana, India" },
-      { name: "Mr. Subrahmanyam B H V S", affiliation: "Central University of Haryana, India" },
+      { name: "Mr. Subrahmanyam B H V S P", affiliation: "Central University of Haryana, India" },
       { name: "Mr. Deepak Kumar", affiliation: "Central University of Haryana, India" },
     ],
   },
