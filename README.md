@@ -135,8 +135,3 @@ Contributions are welcome! If you have ideas or find any issues, feel free to fo
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-## Contact
-
-For queries or feedback, please contact us at **contact@conferenceexample.com**.
