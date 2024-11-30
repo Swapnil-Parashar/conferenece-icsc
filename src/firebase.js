@@ -11,13 +11,13 @@ import { GoogleAuthProvider} from "firebase/auth";
 import { doc } from "firebase/firestore/lite";
 // web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB_tGlMnLndqfZQKSNHSPELjlVhlL4gQtQ",
-  authDomain: "login-page-be509.firebaseapp.com",
-  projectId: "login-page-be509",
-  storageBucket: "login-page-be509.appspot.com",
-  messagingSenderId: "703287397878",
-  appId: "1:703287397878:web:fa87f347d02ad8ba6e4bd7",
-  measurementId: "G-CLZ4NCH9SL"
+  apiKey: "",
+  authDomain: "",
+  projectId: "9",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 // Initialize Firebase
